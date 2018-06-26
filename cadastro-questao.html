@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <title>MyQuiz</title>
+
+    <!-- google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- style.css -->
+    <link rel="stylesheet" type="text/css" href="asserts/css/style.css" />
+ </head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="javascript:;" class="float-left">
+            <i class="material-icons">keyboard_arrow_left</i>
+        </a>
+
+        <a href="javascript:;" class="float-left">
+            <h1>MyQuiz</h1>
+        </a>
+
+        <a href="javascript:;" class="float-right">
+            <i class="material-icons">more_vert</i>
+        </a>
+
+        <a href="javascript:;" class="float-right">
+            <i class="material-icons">search</i>
+        </a>
+
+        <a href="javascript:;" class="float-right">
+            <i class="material-icons">share</i>
+        </a>
+    </header>
+
+    <!-- content -->
+    <content>
+        <form class="card" method="post" action="cadastro-professor.html">
+            <!-- card title -->
+            <div class="card-title">
+                <h1>CADASTRO DE QUESTÕES</h1>
+            </div>
+                
+            <!-- card content -->
+            <div class="card-content">
+                <div class="row">
+                    <input id="enunciado" class="col-s4" type="text" placeholder="Enunciado" />
+                    <input id="alternativa_a" class="col-s4" type="text" placeholder="Alternativa a)" />
+                    <input id="alternativa_b" class="col-s4" type="text" placeholder="Alternativa b)" />
+                    <input id="alternativa_c" class="col-s4" type="text" placeholder="Alternativa c)" />
+                    <input id="alternativa_d" class="col-s4" type="text" placeholder="Alternativa d)" />
+                    <input id="resposta" class="col-s4" type="text" placeholder="Resposta" />
+                </div>
+            </div>
+                
+            <!-- card footer -->
+            <div class="row card-footer">
+                <input id="salvar" class="col-s4" type="button" value="Salvar" />
+                <input id="listar" class="col-s4" type="button" value="Listar" />
+            </div>
+        </form>
+    </content>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="javascript:;">
+                <i class="material-icons">home</i>
+            </a> |
+            <a href="javascript:;">
+                <i class="material-icons">contact_support</i>
+            </a> |
+            <a href="javascript:;">
+                <i class="material-icons">settings</i>
+            </a>
+        </div> 
+        
+        <p>Copyright &copy; IFCE 2018, Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- scripts.js -->
+    <script type="text/javascript" src="asserts/js/layout.js"></script>
+
+    <!-- professor -->
+    <script type="text/javascript" src="controller/professores-controller.js"></script>
+</body>
+</html>
