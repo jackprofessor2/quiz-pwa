@@ -6,8 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- favicon -->6
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!-- apps default settings -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="MyQuiz">
+    <meta name="msapplication-TileImage" content="asserts/images/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#644100">   
+    <meta name="theme-color" content="#c43a0d">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="asserts/images/logo.png" type="image/x-icon" />
+
+    <!-- manifest.json -->
+    <link rel="manifest" href="manifest.json" />
 
     <title>MyQuiz</title>
 
@@ -44,7 +55,29 @@
 
     <!-- content -->
     <content>
-        
+        <!-- form -->
+        <form class="card" method="post" action="cadastro-professor.html">
+            <!-- card title -->
+            <div class="card-title">
+                <h1>PÁGINA INICIAL</h1>
+            </div>
+                
+            <!-- card content -->
+            <div class="card-content">
+                <div class="row">
+                    <a class="col-s4" href="/login.html">LOGIN</a>
+                    <a class="col-s4" href="/cadastro-aluno.html">CADASTRAR ALUNO</a>
+                    <a class="col-s4" href="/cadastro-professor.html">CADASTRAR PROFESSOR</a>
+                    <a class="col-s4" href="/responder-quiz.html">RESPONDER QUIZ</a>
+                    <a class="col-s4" href="/cadastro-questao.html">CADASTRAR ALUNO</a>
+                </div>
+            </div>
+                
+            <!-- card footer -->
+            <div class="row card-footer">
+                <input id="Entrar" class="col-s4" type="button" value="SAIR DA APLICAÇÃO" />
+            </div>
+        </form>
     </content>
 
     <!-- footer -->
